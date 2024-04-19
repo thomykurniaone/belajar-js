@@ -1,1 +1,2 @@
-Sanbercode QA Test
+Tugas Pekanan 2 - Javascript
+SanberCode
