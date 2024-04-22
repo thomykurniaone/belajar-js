@@ -1,25 +1,19 @@
-const prompt = require('prompt-sync')({ sigint: true });
+const prompt = require('prompt-sync')({sigint: true});
 
-while (true) {
-  const input = prompt('Masukkan angka: ');
+const number = prompt('Masukan nilai: ');
 
-  const number = parseInt(input);
+var squaredRoot;
 
-  if (isNaN(number)) {
-    console.error('Input harus berupa angka.');
-    continue;
-  }
+if(number<=0){
 
-  if (number < 0) {
-    console.error('Tidak bisa input bilangan negatif.');
-    continue;
-  }
+    console.log("Tidak bisa input bilangan negatif")
 
-  if (number % 2 !== 0) {
-    console.error('Tidak bisa input bilangan ganjil.');
-    continue;
-  }
+} else if(number%2!=0) {
 
-  console.log(`Anda memasukkan angka: ${number}`);
-  break;
+    console.log("Tidak bisa input bilangan ganjil")
+
+} else {
+
+    squaredRoot = Math.sqrt(number);
+    console.log("Hasil dari akar " + number + " = " + squaredRoot)
 }
