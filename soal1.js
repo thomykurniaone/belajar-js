@@ -1,19 +1,19 @@
 const prompt = require('prompt-sync')({sigint: true});
 
-const number = prompt('Masukan nilai: ');
+const inputNumber = prompt('Masukan nilai: ');
 
 var squaredRoot;
 
-if(number<=0){
+if(inputNumber<=0){
 
     console.log("Tidak bisa input bilangan negatif")
 
-} else if(number%2!=0) {
+} else if(inputNumber%2!=0) {
 
     console.log("Tidak bisa input bilangan ganjil")
 
 } else {
 
-    squaredRoot = Math.sqrt(number);
-    console.log("Hasil dari akar " + number + " = " + squaredRoot)
+    squaredRoot = Math.sqrt(inputNumber);
+    console.log("Hasil dari akar " + inputNumber + " = " + squaredRoot)
 }
